@@ -12,5 +12,7 @@ router.post('/', deptCtrl.create)
 router.delete('/:id', deptCtrl.del)
 router.get('/:id/newEmployee', employeeCtrl.new)
 router.post('/:id/createEmployee', employeeCtrl.create)
+router.get('/:id/viewEmployee', employeeCtrl.show)
+router.delete('/:id/delete', employeeCtrl.delete)
 
 module.exports = router;

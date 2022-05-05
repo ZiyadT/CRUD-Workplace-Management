@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+<div class="main">
+  <div class="container">
+    <form class="button-form" action="/<%= dept.id %>/updateDept" method="GET">
+        <button class="simple-btn" type="submit">Back</button>
+    </form>
+    <div class="new-dept-heading">
+        <h2><%= empl.name %></h2>
+        <h4>Employee Profile</h4>
+    </div>
+    <form action="/<%= empl.id %>/delete?_method=DELETE" method="POST" class="add-dept-form">
+        <div class="entry-blocks">
+            <div class="entry-block">
+                <label>Age</label>
+                <input class="inactive" disabled type="text" placeholder="<%= empl.age %>">
+            </div>
+            <div class="entry-block">
+              <label>Department</label>
+              <input class="inactive" disabled type="text" placeholder="<%= dept.name %>">
+            </div>
+            <div class="buttons">
+              <button type="submit" class="submit-btn">Delete Profile</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>
+<%- include('./partials/footer') %>

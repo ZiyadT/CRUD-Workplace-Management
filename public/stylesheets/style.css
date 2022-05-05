@@ -217,6 +217,10 @@ input{
   color: white;
 }
 
+.employee:visited{
+  color: white;
+}
+
 .employee:hover{
   color: coral;
 }

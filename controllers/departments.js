@@ -46,7 +46,6 @@ function update(req, res){
 }
 
 function del(req, res){
-    console.log(req.body)
     Department.findByIdAndDelete(req.params.id, function(err){
         res.redirect('/')
     })
