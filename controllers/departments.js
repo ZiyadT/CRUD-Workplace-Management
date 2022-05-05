@@ -1,4 +1,5 @@
 const Department = require('../models/department')
+const Employee = require('../models/employee')
 
 module.exports = {
     create,
@@ -32,7 +33,9 @@ function index(req, res){
 
 function edit(req, res){
     Department.findById(req.params.id, function(err, dept){
-        res.render('../views/updateDept', {dept})
+        Employee.find({department: dept._id}, function(err, employees){
+            res.render('../views/updateDept', {dept, employees})
+        })
     })
 }
 

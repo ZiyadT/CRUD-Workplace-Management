@@ -22,9 +22,17 @@
               <label>Manager</label>
               <input type="text" name="manager" placeholder="<%= dept.manager %>">
             </div>
+            <div class="entry-block">
+              <label>Employees</label>
+              <div class="emp-list">
+                <label><% employees.forEach(function(e){ %>
+                      <a class="employee" href="/<%= e.id %>/viewEmployee"><%= e.name + ', ' %></a>
+                <% }) %></label>
+              </div>
+            </div>
             <div class="buttons">
               <button type="submit" class="submit-btn">Save</button>
-              <a href="/" class="add-employee">Add Employee</a>
+              <a href="/<%= dept._id %>/newEmployee" class="add-employee">Add Employee</a>
           </div>
         </div>
     </form>
