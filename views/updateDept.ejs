@@ -1,0 +1,33 @@
+<%- include('./partials/header') %>
+<div class="main">
+  <div class="container">
+    <form class="button-form" action="/" method="GET">
+        <button class="simple-btn" type="submit">Back</button>
+    </form>
+    <div class="new-dept-heading">
+        <h2>Update Department</h2>
+        <h4>Please fill out the fields below</h4>
+    </div>
+    <form action="/" method="POST" class="add-dept-form">
+        <div class="entry-blocks">
+            <div class="entry-block">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="<%= dept.name %>">
+            </div>
+            <div class="entry-block">
+              <label>Roles</label>
+              <input type="text" name="role" placeholder="<%= dept.role %>">
+            </div>
+            <div class="entry-block">
+              <label>Manager</label>
+              <input type="text" name="manager" placeholder="<%= dept.manager %>">
+            </div>
+            <div class="buttons">
+              <button type="submit" class="submit-btn">Save</button>
+              <a href="/" class="add-employee">Add Employee</a>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>
+<%- include('./partials/footer') %>

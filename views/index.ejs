@@ -1,0 +1,41 @@
+<%- include('./partials/header') %>
+<div class="main">
+  <div class="container">
+    <form class="button-form" action="/newDept" method="GET">
+      <button class="simple-btn" type="submit">Create Department</button>
+    </form>
+    <div class="table-container">
+      <table class="main-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Roles</th>
+            <th>Manager</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% depts.forEach(function(dept){ %>
+            <tr>
+              <td><%= dept.id %></td>
+              <td><%= dept.name %></td>
+              <td><%= dept.role %></td>
+              <td><%= dept.manager %></td>
+              <td>
+                <form class="action-form" action="/<%= dept.id %>/updateDept" method="GET">
+                  <button class="action edit" type="submit">Edit</button>
+                </form>
+                <!--<a href="/<%= dept.id %>/updateDept" class="action-btn">Edit</a>-->
+                <form class="action-form" action="/<%= dept.id %>?_method=DELETE" method="POST">
+                  <button class="action delete" type="submit">Delete</button>
+                </form>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<%- include('./partials/footer') %>

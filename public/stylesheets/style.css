@@ -1,0 +1,206 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #282726;
+  color: white;
+}
+
+header{
+  max-width: 100%;
+  margin: auto;
+  border-bottom: 12px solid;
+  border-image: linear-gradient(to bottom,#282726, greenyellow) 1 0;
+  padding: 1em 0;
+  width: 100%;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 80px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+
+.button-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.simple-btn{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  margin: 5px;
+  border: 1px solid orange;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background-color: coral;
+  opacity: 0.8;
+  width: 180px;
+}
+
+.back-btn{
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+.container{
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.main{
+  margin: 10em;
+}
+
+.table-container{
+  margin: 2em 0;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 8px solid;
+	padding: 1rem;
+  border-image: linear-gradient(to left, turquoise, greenyellow) 1 0;
+}
+
+table{
+  border-spacing: 0px;
+  width: 100%;
+}
+
+th{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 25px;
+  color: white;
+}
+
+td{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+  padding: 0.75em;
+  vertical-align: top;
+  border-top: 1px solid;
+  border-image: linear-gradient(to left, turquoise, greenyellow) 1 0;
+}
+
+.action{
+  margin: 5px;
+  padding: 5px;
+  width: 60px;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+}
+
+.action:hover {
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.simple-btn:hover{
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.submit-btn:hover{
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.edit{
+  border: 1px solid green;
+  background-color: turquoise;
+  opacity: 0.8;
+}
+
+.delete{
+  color: red;
+  border: 1px solid yellow;
+  background-color: greenyellow;
+  opacity: 0.8;
+}
+
+/* Add dept */
+
+.new-dept-heading{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.new-dept-heading > h2{
+  padding: 0.3em 0;
+  font-size: 35px;
+}
+
+.new-dept-heading > h4{
+  padding: 0.3em 0;
+  font-size: 20px;
+}
+
+.entry-block{
+  margin: 2em 0;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+input{
+  width: 70%;
+  padding: 5px;
+  margin: 3px 5px;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 15px;
+  background: transparent;
+  color: white;
+  border: 1px solid black;
+}
+
+.submit-btn{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  margin: 5px 100px;
+  border: 1px solid green;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background-color: turquoise;
+  opacity: 0.8;
+  min-width: 180px;
+}
+
+.add-employee{
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  margin: 5px 100px;
+  border: 1px solid yellow;
+  font-size: 1em;
+  padding: 0.525em 2.5em;
+  background-color: greenyellow;
+  opacity: 0.8;
+}
+
+.add-employee:hover{
+  opacity: 0.6;
+  font-weight: bold;
+}
