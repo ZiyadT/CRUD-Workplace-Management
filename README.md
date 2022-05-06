@@ -23,6 +23,7 @@ A tool that allows users to create departments and add employees to created depa
 * Click the turquoise button labelled "Edit" to edit the fields of the department and add employees
 * Click the green button labelled "Delete" to delete the department from the list
 * When on the edit page, the user can click on employee names to view their profile and delete them
+* Add profile pictures for employees
 
 ## Next Steps
 
