@@ -1,4 +1,4 @@
-# (CRUD) WOrkplace Management
+# (CRUD) Workplace Management
 
 Workplace management tool for departments and emplyees.
 
